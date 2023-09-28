@@ -45,13 +45,36 @@ What is the entry point of an application?
 
 Why main is static?
      //because it needs to be able to be called without creating an instance of the class
+
 Which class is the superclass of all classes?
+
+     // The Object class
+
 What is difference between path and classpath variables?
+       //  The classpath variable is used to specify the directories that the JVM should search for class files.
+
+       // The path variable is used to specify the directories that the Java Virtual Machine
+
 What is the difference between an Interface and Abstract class?
+   //interface is an abstract type that specifies the behavior of a class.
+   // Abstract classes are typically used to create a base class for other classes to inherit from.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+    //We cannot create objects of an abstract class. To implement features of an abstract class, we inherit subclasses from it and create objects of the subclass. A subclass must override all abstract methods of an abstract class. However, if the subclass is declared abstract, it's not mandatory to override abstract methods.
+
 what is Access Specifier?
+
+       //An access specifier  is a keyword that is used to control the accessibility of a class,
+
 What is OOP ? Define each feature of java OOP.
+
+       // OOP = Object-oriented programming is a core of Java Programming, which is used for designing a program using classes and objects. OOPs, can also be characterized as data controlling for accessing the code.
+      //     abstraction, encapsulation, inheritance and polymorphism.
+
+
 What is Java Package and which package is imported by default?
+
+      // A Java package is a group of related classes. It is used to organize code and to prevent name conflicts. The default package is the package that is imported when you create a new Java project. It contains all of the classes that are not part of any other package.
 What is API? Name list of API that you have used so far.
 Does java support multiple inheritance, explain why or why not?
 What is method overloading and when it happens?
