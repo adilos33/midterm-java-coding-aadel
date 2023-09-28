@@ -9,6 +9,7 @@ A.
 
 What jdk contains or composed of and define each components?
 A.
+software development kit used by Java developers. It contains tools and libraries necessary for developing, compiling, debugging, and running Java applications and applets.
 
 
 
@@ -16,19 +17,34 @@ A.
 
 What is IDE?
 A.
-
+ is a software application that helps programmers write code efficiently. IDEs combine the tools needed to write and test software, such as text editors, code libraries, compilers, and test platforms. IDEs increase developer productivity by combining these tools into a single application
 
 
 What are the IDEs available in the market to support java?
 A.
-
+eclipse
+InteliiJ IDEA.
+JDK
+MetBeans
+JCreator
 
 
 Explain the entire java life cycle.
+
+    // Life Cycle is a systematic approach to develop software. It creates a structure for the developer to design, create and deliver high-quality software according to the requirements of customer or end-user. It also provides a methodology for improving the quality of the desired product
+
 what is class?
+    //is a blueprint for creating objects. It defines the properties and behaviors of an object. A class can contain fields, methods, and constructors.
+
 What is object?
+
+   //is a data structure that encapsulates data and behavior. It is a blueprint for creating instances of a class. An object has state and behavior. State is represented by the object's fields, and behavior is represented by the object's methods.
+
 What is the entry point of an application?
+   //  entry point is the place in a program where execution begins. It's the first line of code that's executed
+
 Why main is static?
+     //because it needs to be able to be called without creating an instance of the class
 Which class is the superclass of all classes?
 What is difference between path and classpath variables?
 What is the difference between an Interface and Abstract class?
