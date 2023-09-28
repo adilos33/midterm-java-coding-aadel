@@ -112,22 +112,78 @@ What is a constructor ?
     //A constructor in Java is a special method that is called when an object is created. It is used to initialize the object's state
 
 Can we have multiple constructors in a class?
+
+    //Yes, a class can have multiple constructors as long as the constructors have different parameter lists
+
 If we don't have a constructor declared, what is called during the object creation?
+
+     //If we don't have a constructor declared, the default constructor is called. The default constructor does nothing.
+
 What is "this" keyword in java ?
+
+    //refers to the current object. It can be used to access the object's properties and methods
+
 What is "super" keyword in java? How many possible way can you use?
+
+    //The super keyword in Java is used to refer to the superclass of the current class. It can be used to access the superclass's methods, fields, and constructors. There are two possible ways to use the super keyword:
+
+      To access the superclass's methods, fields, and constructors.
+      To call the superclass's constructor.
+
 What is JVM stand for ?
+
+      //JVM stands for Java Virtual Machine. It is essentially a virtual machine or runtime environment that allows Java programs to run and operate on multiple devices and operating systems. Java programs cannot run on machines that don't have JVM support. It is an integral part of the Java Runtime Environment (JRE).
+
 Is JVM platform independent?
+
+     //JVM is undoubtedly platform-independent. Similar to how it varies depending on the surroundings.
+
 What version of java are you using?
+
+      //version 11
+
 What is JAR stand for ?
+
+      //JAR stands for Java ARchive. It's a file format based on the popular ZIP file format and is used for aggregating many files into one
+
 What is the difference between JDK and JVM?
+
+         //JDK is a software development kit to develop applications in Java. It is a software bundle which provides Java class libraries with necessary components to run Java code. JVM executes Java byte code and provides an environment for executing it.
+
 What is the difference between JVM and JRE?
+
+     //JRE identifies all the helpful class libraries needed for execution, while JVM is a subclass of JRE that decodes the bytecode into machine language and other minor tasks. JVM and JRE do not participate in development processes like debugging and compiling; JDK is used for them.
+
 What is compile time and run time?
+
+      //Compile time is the period of time when the Java compiler converts the Java source code into Java bytecode. Run time is the period of time when the Java Virtual Machine (JVM) executes the Java bytecode.
+
 What is heap?
+
+   //The heap is a region of memory in the Java Virtual Machine (JVM) that is used to store objects
+
 How java manage it's memory?
+
+        //Java manages its memory using a garbage collector. The garbage collector is a process that runs in the background and automatically frees up memory that is no longer being used by an application. This allows Java applications to run more efficiently and use less memory.
+
 What is the difference between String, StringBuffer and StringBuilder?
+
+      //String is an immutable class, which means that once a String object is created, its contents cannot be changed.
+      //StringBuffer is a mutable class, which means that its contents can be changed after it is created.
+      // StringBuilder is a mutable class that is similar to StringBuffer, but it is not synchronized, which means that it is not thread-safe.
+
 What is Singleton class?
+
+    //A singleton class is a class that can only have one instance. This is useful for classes that represent resources that should only be accessed by one object at a time, such as a database connection or a file.
+
 What is Serialization and Deserialization?
+
+     //erialization is the process of converting the state of an object into a byte stream. Deserialization is the reverse process, where the byte stream is used to recreate the original object.
+
 when to use transient variable in java?
+
+     //Transient variables are used to indicate that a variable should not be serialized. This is useful for variables that contain sensitive data, such as passwords or credit card numbers.
+
 Difference between while and do..while loop?
 What is Enum?
 What is Iterator?
