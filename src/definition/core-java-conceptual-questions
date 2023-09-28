@@ -75,14 +75,42 @@ What is OOP ? Define each feature of java OOP.
 What is Java Package and which package is imported by default?
 
       // A Java package is a group of related classes. It is used to organize code and to prevent name conflicts. The default package is the package that is imported when you create a new Java project. It contains all of the classes that are not part of any other package.
+
 What is API? Name list of API that you have used so far.
+
+     //An API in Java is a set of classes and interfaces that provide a way for developers to interact with a particular functionality
+
 Does java support multiple inheritance, explain why or why not?
+
+     //Java does not support multiple inheritance because it can lead to ambiguity. For example, if a class inherits from two classes that both have a method with the same name, it is not clear which method should be called. To avoid this ambiguity, Java only allows classes to inherit from one class at a time.
+
 What is method overloading and when it happens?
+
+       //is a programming technique that allows developers to use the same method name multiple times in the same class, but with different parameters.
+
 Explain exceptions in java and how to handle it.
+
+     //Exceptions are a way of handling unexpected events in Java. They are objects that are thrown when an error occurs. To handle an exception, you can use a try-catch block
+
 What is static keyword in java? How it has been used in variables and methods ?
+        //The static keyword in Java is used to declare variables and methods that belong to the class itself,
+        // a static  methods are declared with the static keyword, and they can be accessed using the class name, followed by a dot, followed by the method name
+        // a static  variables are declared with the static keyword, and they can be accessed using the class name, followed by a dot, followed by the variable name
+
 What is final and how it has been used variables and methods?
+
+    // The final keyword in Java is used to declare a variable or method as final. A final variable cannot be changed after it is initialized, and a final method cannot be overridden by subclasses.
+
 What is final, finally and finalize?
+
+         //final is a  keyword  used as an access modifier to restrict the modification of a variable, method, or class. It's usually used on static variables that will hold the same value throughout the program
+         //finally is a block used to ensure that a section of code is always executed, even if an exception is thrown. It's associated with the try/catch block that is used to handle exceptions.
+         // finalize  This method is used to perform cleanup processing on an object before it is garbage collected. It's called by the JVM before an object is about to be garbage collected.
+
 What is a constructor ?
+
+    //A constructor in Java is a special method that is called when an object is created. It is used to initialize the object's state
+
 Can we have multiple constructors in a class?
 If we don't have a constructor declared, what is called during the object creation?
 What is "this" keyword in java ?
