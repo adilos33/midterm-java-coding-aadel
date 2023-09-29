@@ -185,26 +185,96 @@ when to use transient variable in java?
      //Transient variables are used to indicate that a variable should not be serialized. This is useful for variables that contain sensitive data, such as passwords or credit card numbers.
 
 Difference between while and do..while loop?
-What is Enum?
-What is Iterator?
-Which one will take more memory, an int or Integer?
-Why is String Immutable in Java?
-What is constructor chaining in Java?
-The difference between Serial and Parallel Garbage Collector?
-What is JIT stands for?
-Explain Java Heap space and Garbage collection?
-Can you guarantee the garbage collection process?
-What is the difference between stack and heap in Java?
-What is reflection in java and why is it useful?
-what is multithreading in java?
-What is the use of synchronization in Java?
-What is Framework?
-What are the testing Framework available in java?
-Difference between jUnit and testNG?
-What are the dependencies for this project?
-what is dependency injection in java?
-What is static binding and dynamic binding?
 
+       //A while loop will execute the body of the loop as long as the condition is true. A do while loop will execute the body of the loop once, and then continue to execute the body of the loop as long as the condition is true.
+
+         Here is an example of a while loop:
+
+What is Enum?
+
+            //A Java Enum is a special Java type used to define collections of constants. More precisely, a Java enum type is a special kind of Java class. An enum can contain constants, methods etc. Java enums were added in Java
+
+What is Iterator?
+
+            //An iterator is an object that allows you to traverse the elements of a collection. It is a more efficient way to iterate over a collection than using a for loop, because it does not require creating a new array for each iteration.
+
+Which one will take more memory, an int or Integer?
+
+           //In Java, an int is a primitive data type that takes up 4 bytes of memory. An Integer is a wrapper class for an int that also takes up some memory. The amount of memory that an Integer takes up depends on the size of the int that it wraps. For example, an Integer that wraps a 32-bit int will take up 4 bytes of memory, while an Integer that wraps a 64-bit int will take up 8 bytes of memory.
+
+Why is String Immutable in Java?
+
+           //String is immutable in Java because it is a wrapper class for the primitive char array. If String were mutable, it would be possible to change the contents of a String object, which could lead to unexpected behavior. For example, if you had a String object that contained a reference to another object, and you changed the contents of the String object, the reference would be invalid.
+
+What is constructor chaining in Java?
+
+           // Constructor chaining is a technique in Java that allows you to call one constructor from another constructor in the same class. This can be useful for initializing objects with default values or for passing parameters to constructors
+
+The difference between Serial and Parallel Garbage Collector?
+
+         //The parallel collector is also known as throughput collector, it's a generational collector similar to the serial collector. The primary difference between the serial and parallel collectors is that the parallel collector has multiple threads that are used to speed up garbage collection.
+
+ What is JIT stands for?
+
+      //JIT stands for Just-In-Time compiler. It is a compiler that compiles Java bytecode to native machine code at runtime. This allows Java programs to run faster than if they were compiled to native machine code ahead of time.
+
+
+Explain Java Heap space and Garbage collection?
+
+      //Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease in size while the application runs. When the heap becomes full, garbage is collected. During the garbage collection objects that are no longer used are cleared, thus making space for new objects.
+
+Can you guarantee the garbage collection process?
+
+      //No, you cannot guarantee the garbage collection process in Java. Garbage collection is a probabilistic process, and there is no guarantee that all objects will be garbage collected before the program terminates. However, the Java Virtual Machine (JVM) will try its best to collect garbage as soon as possible, and it will do so automatically.
+
+ What is the difference between stack and heap in Java?
+     //Stack provides static memory allocation, i.e., it is used to store the temporary variables. Heap provides dynamic memory allocation. By default, all the global variables are stored in the heap. It is a linear data structure means that elements are stored in the linear manner, i.e., one data after another.
+
+What is reflection in java and why is it useful?
+
+        //Reflection is a feature of Java that allows you to inspect and modify the properties and methods of an object at runtime. It is useful for a variety of tasks, such as:
+
+          Debugging: Reflection can be used to inspect the properties and methods of an object at runtime, which can be helpful for debugging problems.
+          Introspection: Reflection can be used to introspect an object, which means to learn about its properties and methods without actually using them. This can be useful for things like documentation or code generation.
+          Dynamic code generation: Reflection can be used to generate code at runtime, which can be useful for things like creating plugins or extensions.
+
+what is multithreading in java?
+
+         //Multithreading is a feature of Java that allows multiple threads to run concurrently. This can be useful for improving the performance of applications that are CPU-bound.
+
+           To create a multithreaded application, you need to create a class that extends the Thread class. The Thread class provides methods for starting, stopping, and joining threads.
+
+What is the use of synchronization in Java?
+
+     //Synchronization is a mechanism in Java that allows multiple threads to access shared resources safely. It is used to prevent race conditions, which can occur when multiple threads try to access the same resource at the same time.
+          There are two main types of synchronization in Java:
+          -Locks
+          -Condition variable
+
+
+What is Framework?
+
+    //A framework in Java is a collection of classes and interfaces that provide a foundation for building applications. Frameworks can provide functionality such as database access, user interface components, and networking.
+
+What are the testing Framework available in java?
+      //Selenium -
+      //Cucumber  JUnit -
+
+Difference between jUnit and testNG?
+
+     //TestNG is a Java-based framework, while JUnit is an open-source Unit Testing Framework for JAVA.
+
+What are the dependencies for this project?
+
+         //In order to identify project dependencies, you must first create a map of project tasks. Next, look for tasks that the team cannot perform until they receive information or deliverables from a previous task. Those tasks are dependent. Think of your whole project as a series of workflows or a flowchart
+
+what is dependency injection in java?
+
+            //Dependency injection is a design pattern that allows you to decouple the consumers of a dependency from the actual implementation of that dependency. This makes it easier to test and maintain your code.
+
+ What is static binding and dynamic binding?
+
+      //Static binding and dynamic binding are two ways to resolve method calls in Java.
 
 
 
