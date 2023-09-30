@@ -20,6 +20,90 @@ public class DataReader {
 
 		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
 
+		import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.LinkedList;
+import java.util.Stack;
+
+		public class FileAndDataExample {
+			public static void main(String[] args) {
+				String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+
+				try (BufferedReader reader = new BufferedReader(new FileReader(textFile))) {
+					String line;
+					while ((line = reader.readLine()) != null) {
+						String[] words = line.split("\\s+");
+
+						Stack<String> stack = new Stack<>();
+						LinkedList<String> linkedList = new LinkedList<>();
+
+						for (String word : words) {
+							stack.push(word);
+							linkedList.add(word);
+						}
+
+						System.out.println("Stack operations:");
+						while (!stack.isEmpty()) {
+							System.out.println("Pop: " + stack.pop());
+						}
+
+						System.out.println("\nLinkedList operations:");
+						for (String word : linkedList) {
+							System.out.println("FIFO: " + word);
+						}
+
+						storeDataInDatabase(linkedList);
+						retrieveDataFromDatabase();
+					}
+				} catch (IOException | SQLException e) {
+					e.printStackTrace();
+				}
+			}
+
+			private static void storeDataInDatabase(LinkedList<String> linkedList) throws SQLException {
+				String url = "jdbc:mysql://localhost:3306/mydb";
+
+				String user = "root";
+				String password = "@33Jadaya";
+
+				try (Connection connection = DriverManager.getConnection(url, user, password)) {
+					String sql = "INSERT INTO words (word) VALUES (?)";
+					try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+						for (String word : linkedList) {
+							preparedStatement.setString(1, word);
+							preparedStatement.executeUpdate();
+						}
+					}
+				}
+			}
+
+			private static void retrieveDataFromDatabase() throws SQLException {
+				String url = "jdbc:mysql://localhost:3306/your_database_name";
+				String user = "your_username";
+				String password = "your_password";
+
+				try (Connection connection = DriverManager.getConnection(url, user, password)) {
+					String sql = "SELECT word FROM words";
+					try (Statement statement = connection.createStatement()) {
+						ResultSet resultSet = statement.executeQuery(sql);
+
+						System.out.println("\nData retrieved from the database:");
+						while (resultSet.next()) {
+							System.out.println("Database: " + resultSet.getString("word"));
+						}
+					}
+				}
+			}
+		}
+
+
 
 
 	}
