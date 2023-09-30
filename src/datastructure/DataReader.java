@@ -20,23 +20,15 @@ public class DataReader {
 
 		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
 
-		import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.LinkedList;
-import java.util.Stack;
 
-		public class FileAndDataExample {
-			public static void main(String[] args) {
-				String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+			public static void mainfor String
+		(String[]) {
+				String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt"){
 
-				try (BufferedReader reader = new BufferedReader(new FileReader(textFile))) {
+		}
+
+
+		try (BufferedReader reader = new BufferedReader(new FileReader(textFile))) {
 					String line;
 					while ((line = reader.readLine()) != null) {
 						String[] words = line.split("\\s+");
@@ -108,4 +100,5 @@ import java.util.Stack;
 
 	}
 
-}
+
+ // the missing number is 9

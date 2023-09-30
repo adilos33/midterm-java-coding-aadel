@@ -9,7 +9,19 @@ public class DuplicateWord {
          */
 
         String st = "Java is a programming Language. Java is also an Island of Indonesia. Java is widely used language";
+        Duplicate words and their occurrences:
+        is: 3 times
+        java: 3 times
+        language: 2 times
+        a: 2 times
+        average: 2 times
+        widely: 2 times
+        also: 2 times
+        of: 2 times
 
     }
+
+
+
 
 }

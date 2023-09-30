@@ -8,8 +8,32 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
 
+
+		public class NumberPatternExample {
+			public static void main(String[] args) {
+				int startNumber = 100;
+				int decreaseBy = 1;
+
+				generatePattern(startNumber, decreaseBy);
+			}
+
+			public static void generatePattern(int startNumber, int decreaseBy) {
+				int count = 0;
+				int currentNumber = startNumber;
+
+				while (currentNumber >= 0) {
+					System.out.print(currentNumber + " ");
+
+					count++;
+					currentNumber -= decreaseBy;
+
+					if (count % 10 == 0) {
+						decreaseBy++;
+					}
+				}
+			}
+		}
 
 	}
 }

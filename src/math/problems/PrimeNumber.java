@@ -13,6 +13,45 @@ public class PrimeNumber {
 		 *
 		 */
 
+		import java.util.ArrayList;
+import java.util.List;
+
+		public class PrimeNumbersExample {
+			public static void main(String[] args) {
+				int upperLimit = 1000000;
+
+				List<Integer> primeNumbers = findPrimes(upperLimit);
+
+				System.out.println("Number of prime numbers between 2 and " + upperLimit + ": " + primeNumbers.size());
+			}
+
+			public static List<Integer> findPrimes(int n) {
+				boolean[] isPrime = new boolean[n + 1];
+				List<Integer> primes = new ArrayList<>();
+
+				for (int i = 2; i <= n; i++) {
+					isPrime[i] = true;
+				}
+
+				for (int i = 2; i * i <= n; i++) {
+					if (isPrime[i]) {
+						for (int j = i * i; j <= n; j += i) {
+							isPrime[j] = false;
+						}
+					}
+				}
+
+				for (int i = 2; i <= n; i++) {
+					if (isPrime[i]) {
+						primes.add(i);
+					}
+				}
+
+				return primes;
+			}
+		}
+
+
 	}
 
 }
